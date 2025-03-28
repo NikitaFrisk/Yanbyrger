@@ -26,15 +26,9 @@ const BurgerIngredients = ({ ingredients }) => {
             <h1 className={`${styles.title} text text_type_main-large`}>Соберите бургер</h1>
 
             <div className={styles.tabs}>
-                <Tab value="bun" active={current === 'bun'} onClick={handleTabClick}>
-                    Булки
-                </Tab>
-                <Tab value="sauce" active={current === 'sauce'} onClick={handleTabClick}>
-                    Соусы
-                </Tab>
-                <Tab value="main" active={current === 'main'} onClick={handleTabClick}>
-                    Начинки
-                </Tab>
+                <Tab value="bun" active={current === 'bun'} onClick={handleTabClick}>Булки</Tab>
+                <Tab value="sauce" active={current === 'sauce'} onClick={handleTabClick}>Соусы</Tab>
+                <Tab value="main" active={current === 'main'} onClick={handleTabClick}>Начинки</Tab>
             </div>
 
             <div className={styles.tabContent}>
