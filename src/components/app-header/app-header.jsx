@@ -13,7 +13,7 @@ export const AppHeader = () => {
                 </div>
                 <div className={styles.logo}><Logo/></div>
                 <a href="/profile" className={`${styles.link} text text_type_main-default`}>
-                    <ProfileIcon type="secondary" /> Личный кабинет</a>
+                    <ProfileIcon type="secondary" /> Личный кабинет </a>
             </nav>
         </header>
     )

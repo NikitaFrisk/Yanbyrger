@@ -1,11 +1,11 @@
-import PropTypes from 'prop-types';
 import { ConstructorElement, Button, CurrencyIcon, DragIcon } from '@ya.praktikum/react-developer-burger-ui-components';
 import styles from './burger-constructor.module.scss';
 import { IngredientType } from '@utils/types';
+import PropTypes from 'prop-types';
 
 export const BurgerConstructor = ({ ingredients }) => {
 
-    const fillings = ingredients.filter(item => item.type !== 'bun').slice(0, 5);
+    const fillings = ingredients.filter(item => item.type !== 'bun').slice(0, 7);
     const bun = ingredients.find(item => item.type === 'bun');
     const totalPrice = 610
 
@@ -57,7 +57,7 @@ export const BurgerConstructor = ({ ingredients }) => {
                     <span className="text text_type_digits-medium">{totalPrice}</span>
                     <CurrencyIcon type="primary" />
                 </div>
-                <Button htmlType="button" type="primary" size="large">
+                <Button htmlType="button" type="primary" size="large">              
                     Оформить заказ
                 </Button>
             </div>

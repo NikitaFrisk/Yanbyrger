@@ -1,8 +1,8 @@
-import { useState, useRef } from 'react';
-import PropTypes from 'prop-types';
 import { Tab, CurrencyIcon } from '@ya.praktikum/react-developer-burger-ui-components';
 import styles from './burger-ingredients.module.scss';
 import { IngredientType } from '@utils/types';
+import { useState, useRef } from 'react';
+import PropTypes from 'prop-types';
 
 const BurgerIngredients = ({ ingredients }) => {
     const [current, setCurrent] = useState('bun');
@@ -28,7 +28,8 @@ const BurgerIngredients = ({ ingredients }) => {
             <div className={styles.tabs}>
                 <Tab value="bun" active={current === 'bun'} onClick={handleTabClick}>Булки</Tab>
                 <Tab value="sauce" active={current === 'sauce'} onClick={handleTabClick}>Соусы</Tab>
-                <Tab value="main" active={current === 'main'} onClick={handleTabClick}>Начинки</Tab>
+                <Tab value="main" active={current === 'main'} onClick={handleTabClick}>Начинки
+                </Tab>
             </div>
 
             <div className={styles.tabContent}>
